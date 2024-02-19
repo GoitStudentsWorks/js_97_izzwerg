@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_97_izzwerg/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    
+    <script type="module" crossorigin src="/js_97_izzwerg/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_97_izzwerg/assets/vendor-8cce9181.js">
+    <link rel="modulepreload" crossorigin href="/js_97_izzwerg/assets/qoute-7d1581a6.js">
+    <link rel="stylesheet" href="/js_97_izzwerg/assets/vendor-e5212ee8.css">
+    <link rel="stylesheet" href="/js_97_izzwerg/assets/qoute-d8e3eb56.css">
+    <link rel="stylesheet" href="/js_97_izzwerg/assets/favorites-9d04fbc8.css">
+  </head>
+  <body>
+    <header class="container head-position">
+  <div class="head-style">
+    <a class="head-logo" href="index.html">energy.flow</a>
+    <nav class="head-nav">
+      <a href="index.html"><div class="head-nav-home">Home</div></a>
+      <a href="favorites.html"><div class="head-nav-fav">Favorites</div></a>
+    </nav>
+    <ul class="head-social">
+      <li class="head-social-container">
+        <a
+          class="head-social-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg class="head-social-svg" width="28" height="28">
+            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#facebook"></use></svg
+        ></a>
+      </li>
+      <li class="head-social-container">
+        <a
+          class="head-social-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg class="head-social-svg" width="28" height="28">
+            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#instagram"></use></svg
+        ></a>
+      </li>
+      <li class="head-social-container">
+        <a
+          class="head-social-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg class="head-social-svg" width="28" height="28">
+            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#youtube"></use></svg
+        ></a>
+      </li>
+    </ul>
+    <button type="button" class="head-button">
+      <svg class="head-button-svg" width="32" height="32">
+        <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#sandwich"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<div class="backdrop-menu-container is-hidden">
+  <div class="backdrop-menu">
+    <div class="head-style backdrop-style">
+      <a class="head-logo backdrop-logo" href="index.html">energy.flow</a>
+      <button type="button" class="backdrop-button" title="Burger">
+        <svg class="backdrop-button-svg" width="12" height="12">
+          <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="background-nav">
+      <a href="index.html"><div class="head-nav-home">Home</div></a>
+      <a href="favorites.html"><div class="head-nav-fav">Favorites</div></a>
+    </div>
+    <ul class="backdrop-social">
+      <li class="backdrop-social-container">
+        <a
+          class="head-social-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg class="backdrop-social-svg" width="28" height="28">
+            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#facebook"></use></svg
+        ></a>
+      </li>
+      <li class="backdrop-social-container">
+        <a
+          class="head-social-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg class="backdrop-social-svg" width="28" height="28">
+            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#instagram"></use></svg
+        ></a>
+      </li>
+      <li class="backdrop-social-container">
+        <a
+          class="head-social-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg class="backdrop-social-svg" width="28" height="28">
+            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#youtube"></use></svg
+        ></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    <main>
+      <section class="section-quote-fav">
+  <div class="wrapper-quote-fav">
+    <div class="block-with-quote-fav">
+      <div class="icon-quote-fav-runner">
+        <svg height="32" width="32">
+          <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#runner"></use>
+        </svg>
+      </div>
+      <div class="icon-quote-fav-quotes">
+        <svg height="28" width="28">
+          <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#quotes"></use>
+        </svg>
+      </div>
+      <div>
+        <h3 class="quote-fav-title">Quote of the day</h3>
+        <p id="quote-text" class="quote-fav-text"></p>
+        <p id="quote-author" class="quote-fav-author"></p>
+      </div>
+    </div>
+
+    <div class="quote-fav-model"></div>
+
+    <div class="quote-fav-recommendation">
+      <div class="icon-quote-fav-barbell">
+        <svg height="20" width="20">
+          <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#barbell"></use>
+        </svg>
+      </div>
+      <p class="recommendations-time">110 min</p>
+      <p class="recommendations-text">Daily norm of sports</p>
+    </div>
+  </div>
+</section>
+
+      <section class="fav-ex-section container">
+  <div class="fav-box">
+    <h2 class="fav-ex-tittle">Favorites</h2>
+    <div class="no-fav-ex-inner"></div>
+    <div class="fav-ex-inner">
+      <ul class="fav-ex-list"></ul>
+    </div>
+    <div class="fav-pag-btn-set"></div>
+  </div>
+</section>
+
+    </main>
+    <div class="overlay"></div>
+<section class="section_modal">
+  <div class="container_modal"></div>
+</section>
+
+
+    <section>
+    <div class="backdrop">
+        <div class="modal-rating">
+            
+            <button class="rating-close" type="button">
+                <svg class="rating-svg-close" width="10" height="10">
+                    <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#close"></use>
+                </svg>
+            </button>
+
+            <p class="rating-title">Rating</p>
+
+            
+            <div class="rating-rating">
+                <p class="rating-number">0.0</p>
+                <form class="rating-star-form">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">
+                        <svg class="rating-star color-star" width="24" height="24">
+                            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#star"></use>
+                        </svg>
+                    </label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">
+                        <svg class="rating-star color-star" width="24" height="24">
+                            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#star"></use>
+                        </svg>
+                    </label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">
+                        <svg class="rating-star color-star" width="24" height="24">
+                            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#star"></use>
+                        </svg>
+                    </label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">
+                        <svg class="rating-star color-star" width="24" height="24">
+                            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#star"></use>
+                        </svg>
+                    </label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">
+                        <svg class="rating-star color-star" width="24" height="24">
+                            <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#star"></use>
+                        </svg>
+                    </label>
+                </form>
+            </div>
+            
+            
+              
+            
+            <form class="rating-form">
+                <input required class="rating-input-email" type="email" name="email" placeholder="Email" autofocus/>
+                
+                <textarea required class="rating-input-textaera" name="user-comment" placeholder="Your comment"></textarea>
+                
+                <button class="rating-sbm-btn" type="submit">Sent</button>
+            </form>
+        </div>
+     </div>
+</section>
+
+
+
+
+    <!-- Scroll-to-top button -->
+<button
+  id="button-to-top"
+  class="button-to-top"
+  aria-label="Scroll to top"
+  type="button"
+>
+  <svg class="button-to-top-svg">
+    <use href="/js_97_izzwerg/assets/sprite-fb630926.svg#arrow-to-top"></use>
+  </svg>
+</button>
+
+
+
+    
+    
+  </body>
+</html>
