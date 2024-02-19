@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Promise-team-project/",
+    "build": "vite build --base=/js_97_izzwerg/",
     "preview": "vite preview"
   },
   "devDependencies": {
